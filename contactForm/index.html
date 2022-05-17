@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <section class="container">
+    <h1>Contact Me</h1>
+
+    <form onsubmit="return false">
+    </form>
+
+    <input type="text" placeholder="Name" id="name" />
+<br><br>
+
+<input type="email" placeholder="Email" id="userEmail" />
+<br><br>
+
+<input type="text" placeholder="Phone Number" id="userNum" />
+<br><br>
+
+<select id="contactMethod">
+ <option disabled selected value> -- preferred contact method -- </option>
+ <option value="email">Email</option>
+ <option value="phoneNum">Phone Number</option>
+</select>
+<br><br>
+
+<span>Message:</span>
+<br>
+<textarea id="message" rows="4"></textarea>
+<br><br>
+
+<button onclick="submit();">Submit</button>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
