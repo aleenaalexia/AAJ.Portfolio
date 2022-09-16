@@ -135,13 +135,6 @@ nav {
   flex-direction: column;
 }
 
-/*@media(min-aspect-ratio: 16/9) {
-    .back-video {
-        width: auto;
-        height: 100%;
-    }
-}*/
-
 
 .about-header {
     display: flex;
