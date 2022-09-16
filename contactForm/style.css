@@ -27,3 +27,68 @@ h1 {
     padding: 1rem;
 
 }
+
+.head-links {
+    color: var(--light);
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    background: var(--pink-color);
+    transform-origin: center right;
+    transition: transform .2s ease-in;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.head-links {
+    padding: 28px 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.head-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.head-links li a {
+    text-decoration: none;
+    color: #ecabcc;
+    padding: 5px 0;
+    position: relative;
+}
+
+.head-links li a::after {
+    content: '';
+    background: white;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.head-links li a:hover::after {
+    width: 100%;
+}
