@@ -23,17 +23,15 @@
     <form action="https://formsubmit.co/aleenajohns31@gmail.com" method="POST">
    
 
-    <input type="text" placeholder="Name" id="name" required/>
+    <input type="text" name="name" placeholder="Name" id="name" required/>
 <br><br>
 
-<input type="email" placeholder="Email" id="userEmail" required/>
+<input type="email" name="email" placeholder="Email" id="userEmail" required/>
 <br><br>
 
-<input type="text" placeholder="Phone Number" id="userNum" required
+<input type="text" name="phone number" placeholder="Phone Number" id="userNum" required
 />
 <br><br>
-
-<input type="hidden" name="_next" value="https://aleenaalexia.com/contactForm/thanks.html">
 
 <select id="contactMethod">
  <option disabled selected value> -- preferred contact method -- </option>
@@ -44,9 +42,9 @@
 
 <span>Message:</span>
 <br>
-<textarea id="message" rows="4" required></textarea>
+<textarea name="message" id="message" rows="4" required></textarea>
 <br><br>
-
+<input type="hidden" name="_next" value="https://aleenaalexia.com/contactForm/thanks.html">
 <button type="submit">Send</button>
 </form>
 </section>
