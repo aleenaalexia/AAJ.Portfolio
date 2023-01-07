@@ -102,6 +102,18 @@ nav {
     width: 100%;
 }
 
-#github-icon, #linkedin-icon {
+#github-icon {
     color: white;
+    padding: 0 20px;
+    bottom: 0;
+    right: 50%;
+    position: absolute;
+}
+
+#linkedin-icon {
+    color: white;
+    padding: 0 20px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
 }
